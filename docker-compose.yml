@@ -3,14 +3,34 @@ version: '3'
 
 services:
   minecraft:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:multiarch
     ports:
       - "25565:25565"
     volumes:
       - "mc:/data"
+    mem_limit: 8g
     environment:
       EULA: "TRUE"
+      TYPE: FTBA
+      FTB_MODPACK_ID: 29
+      SERVER_NAME: FoxCraft
+      DIFFICULTY: normal
+      OPS: KevinLivek
+      #ICON
+      ALLOW_NETHER: TRUE
+      GENERATE_STRUCTURES: TRUE
+      SPAWN_ANIMALS: TRUE
+      SPAWN_MONSTERS: TRUE
+      SPAWN_NPCS: TRUE
+      MOTD: "Now with more Foxes!"
+      #ENABLE_ROLLING_LOGS:
+      TZ: AMERICA/LOS_ANGELES 
+      LEVEL_TYPE: "BIOMESOP"
+      USE_AIKAR_FLAGS: TRUE
+
     restart: always
+    
+
 
 volumes:
   mc: {}
