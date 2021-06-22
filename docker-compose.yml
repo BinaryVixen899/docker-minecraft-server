@@ -15,7 +15,7 @@ services:
       FTB_MODPACK_ID: "29"
       SERVER_NAME: "FoxCraft"
       DIFFICULTY: normal
-      OPS: KevinLivek
+      OPS: KevinLivek,BinaryVixen899
       MEMORY: "8G"
       #ICON
       ALLOW_NETHER: "TRUE"
