@@ -12,7 +12,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: FTBA
-      FTB_MODPACK_ID: "29"
+      FTB_MODPACK_ID: "65"
       SERVER_NAME: "FoxCraft"
       DIFFICULTY: normal
       OPS: KevinLivek,BinaryVixen899
