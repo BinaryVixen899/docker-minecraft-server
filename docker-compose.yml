@@ -7,16 +7,16 @@ services:
     ports:
       - "25565:25565"
     volumes:
-      - "mc_ftb:/data"
-    mem_limit: 8G
+      - ./minecraft-data:/data
+    mem_limit: 4G
     environment:
       EULA: "TRUE"
       TYPE: FTBA
-      FTB_MODPACK_ID: "65"
+      FTB_MODPACK_ID: "23"
       SERVER_NAME: "FoxCraft"
       DIFFICULTY: normal
       OPS: KevinLivek,BinaryVixen899
-      MEMORY: "8G"
+      MEMORY: "4G"
       #ICON
       ALLOW_NETHER: "TRUE"
       GENERATE_STRUCTURES: "TRUE"
